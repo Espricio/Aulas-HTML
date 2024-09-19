@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento, que informa ao navegador que este é um documento HTML5. -->
+<html lang="pt-br"> <!-- Início do documento HTML, especificando o idioma como português do Brasil. -->
+
+<head> <!-- Seção de cabeçalho do documento, onde ficam os metadados e links para recursos externos. -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8, permitindo a exibição correta de caracteres especiais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para tornar a página responsiva em dispositivos móveis. -->
+    <title>Aula 5 - HTML</title> <!-- Define o título da página, que é exibido na aba do navegador. -->
+</head>
+
+<body> <!-- Início da seção do corpo do documento, onde o conteúdo visível da página é colocado. -->
+
+    <h2>TAGS SEMÂNTICAS</h2> <!-- Cabeçalho de nível 2, indicando que a seção é sobre tags semânticas HTML. -->
+
+    <!-- As tags semânticas HTML são usadas para descrever de forma mais clara o conteúdo de uma página web. 
+    Elas ajudam os mecanismos de busca e outros dispositivos a entender a estrutura e o conteúdo do seu site. -->
+
+    <header>
+        <!-- O elemento <header> representa o cabeçalho de uma seção ou de um documento. 
+            Geralmente, contém elementos como títulos, logotipos, menus de navegação e outros cabeçalhos introdutórios. -->
+
+        <nav>
+            <!-- O elemento <nav> representa uma seção de navegação dentro de um documento. 
+                Contém links para outras partes do site ou para outras páginas. -->
+
+            <ul>
+                <!-- O elemento <ul> cria uma lista não ordenada, e <li> define cada item da lista. -->
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVIÇOS</a></li>
+                <li><a href="#">CONTATO</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section>
+        <!-- O elemento <section> representa uma seção da página que agrupa conteúdo tematicamente selecionado. -->
+        <article>
+            <!-- O elemento <article> é usado para conteúdos independentes e autocontidos, como uma postagem de blog, um artigo de jornal, ou um comentário de fórum. Pode ser distribuído de forma independente ou reutilizável. -->
+
+
+            <h2>PRODUTOS</h2>
+            <p>Informações dos produtos da empresa</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>SERVIÇOS</h2>
+        <p>Informações sobre os serviços da empresa</p>
+    </section>
+
+    <section>
+        <h2>SOBRE NÓS</h2>
+        <p>Informações sobre a empresa</p>
+    </section>
+
+    <aside>
+        <!-- O elemento <aside> é usado para conteúdos relacionados indiretamente ao conteúdo principal. 
+                    Pode incluir barras laterais, notas, citações, links relacionados, etc. -->
+
+        <h2>NOTÍCIAS SENAI</h2>
+        <iframe src="https://sp.senai.br/unidade/sumare/" frameborder="0" width="50%" height="500px"
+            allowfullscreen></iframe>
+        <!-- O elemento <iframe> é utilizado para embutir um documento HTML dentro de outro documento HTML. 
+                    Permite exibir uma página web completa ou partes dela dentro da página atual. 
+                    IMPORTANTE: nem todos os sites permitem a inclusão em iframes por motivos de segurança. -->
+    </aside>
+
+    <footer>
+        <!-- O elemento <footer> é utilizado no rodapé de uma seção ou de um documento. Normalmente, contém informações como direitos autorais, 
+        links para políticas de privacidade e termos de uso, e informações de contato. -->
+
+        <p>&copy; 2024 XYZ. Todos os direitos reservados.</p>
+        <nav>
+            <ul>
+                <!-- Lista de links para páginas de política e termos. -->
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <img src="src/image/tagssemanticas.jpg" alt="Tags Semanticas" width="30%" height="500">
+    <!-- A tag <img> é usada para exibir imagens. O atributo src define o caminho da imagem, alt fornece um texto alternativo para a imagem, width e height definem as dimensões da imagem. -->
+
+</body>
+
+</html>

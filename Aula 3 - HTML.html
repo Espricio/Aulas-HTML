@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento. Informa ao navegador que este é um documento HTML5. -->
+<html lang="pt-br"> <!-- Início do documento HTML. O atributo 'lang' define o idioma como português do Brasil. -->
+
+<head> <!-- Início da seção de cabeçalho do documento, onde ficam os metadados e links para recursos externos. -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, para suportar caracteres especiais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a viewport para tornar a página responsiva em dispositivos móveis. -->
+    <title>Aula 3 - HTML</title> <!-- Define o título da página, que aparece na aba do navegador. -->
+</head>
+
+<body> <!-- Início da seção do corpo do documento, onde fica o conteúdo visível da página. -->
+
+    <h1>IMAGENS</h1><br> <!-- Cabeçalho de nível 1 para a seção de imagens. O <br> adiciona uma quebra de linha. -->
+
+    <img src="src/image/Logo_Senai.png" alt="Logo Senai"> <!-- Imagem com caminho especificado em 'src'. O atributo 'alt' fornece um texto alternativo para acessibilidade e SEO. -->
+
+    <h2>Logo em dimensões de PIXELS</h2> <!-- Cabeçalho de nível 2 para a seção de imagens com dimensões especificadas em pixels. -->
+    <img src="src/image/Logo_Senai.png" alt="Logo Senai" width="300px" height="100px"> <!-- Imagem com dimensões específicas definidas em pixels. -->
+
+    <h2>Logo em dimensões de PORCENTAGEM</h2> <!-- Cabeçalho de nível 2 para a seção de imagens com dimensões especificadas em porcentagem. -->
+    <img src="src/image/Logo_Senai.png" alt="Logo Senai" width="30%" height="10%"> <!-- Imagem com dimensões específicas definidas em porcentagem em relação ao contêiner pai. -->
+
+    <h2>Logo em dimensões de VIEWPORT height</h2> <!-- Cabeçalho de nível 2 para a seção de imagens com dimensões especificadas em altura da viewport. -->
+    <img src="src/image/Logo_Senai.png" alt="Logo Senai" height="50vh"> <!-- Imagem com altura especificada em unidades de viewport height (vh). Nota: Viewport não é acessível a todos os navegadores! -->
+
+    <h2>Logo em dimensões de VIEWPORT Width</h2> <!-- Cabeçalho de nível 2 para a seção de imagens com dimensões especificadas em largura da viewport. -->
+    <img src="src/image/Logo_Senai.png" alt="Logo Senai" width="1000vw"> <!-- Imagem com largura especificada em unidades de viewport width (vw). -->
+
+    <h1>LEGENDA DE IMAGENS</h1> <!-- Cabeçalho de nível 1 para a seção de legendas de imagens. -->
+
+    <figure> <!-- Elemento que agrupa a imagem e sua legenda, fornecendo um contexto semântico. -->
+        <img src="src/image/Logo_Senai.png" alt="Logo Senai"> <!-- Imagem dentro do elemento <figure>. -->
+        <figcaption>Logo do Senai</figcaption> <!-- Legenda para a imagem, descreve o conteúdo da imagem. -->
+    </figure>
+
+    <figure> <!-- Outro elemento <figure> para uma imagem com dimensões especificadas em pixels. -->
+        <img src="src/image/Logo_Senai.png" alt="Logo Senai" width="300px" height="100px"> <!-- Imagem com dimensões definidas em pixels. -->
+        <figcaption>Logo em dimensões de PIXELS</figcaption> <!-- Legenda descrevendo a imagem. -->
+    </figure>
+
+    <figure> <!-- Outro elemento <figure> para uma imagem com dimensões especificadas em porcentagem. -->
+        <img src="src/image/Logo_Senai.png" alt="Logo Senai" width="30%" height="10%"> <!-- Imagem com dimensões definidas em porcentagem. -->
+        <figcaption>Logo em dimensões de PORCENTAGEM</figcaption> <!-- Legenda descrevendo a imagem. -->
+    </figure>
+
+    <figure> <!-- Outro elemento <figure> para uma imagem com altura especificada em unidades de viewport height. -->
+        <img src="src/image/Logo_Senai.png" alt="Logo Senai" height="50vh"> <!-- Imagem com altura definida em viewport height. -->
+        <figcaption>Logo em dimensões de VIEWPORT height</figcaption> <!-- Legenda descrevendo a imagem. -->
+    </figure>
+
+    <figure> <!-- Outro elemento <figure> para uma imagem com largura especificada em unidades de viewport width. -->
+        <img src="src/image/Logo_Senai.png" alt="Logo Senai" width="1000vw"> <!-- Imagem com largura definida em viewport width. -->
+        <figcaption>Logo em dimensões de VIEWPORT Width</figcaption> <!-- Legenda descrevendo a imagem. -->
+    </figure>
+
+</body>
+
+</html>

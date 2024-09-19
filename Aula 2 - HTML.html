@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento. Informa ao navegador que este é um documento HTML5. -->
+<html lang="pt-br"> <!-- Início do documento HTML. O atributo 'lang' define o idioma como português do Brasil. -->
+
+<head> <!-- Início da seção de cabeçalho do documento, onde ficam os metadados e links para recursos externos. -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, para suportar caracteres especiais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a viewport para tornar a página responsiva em dispositivos móveis. -->
+    <title>Aula 2 - HTML</title> <!-- Define o título da página, que aparece na aba do navegador. -->
+</head>
+
+<body> <!-- Início da seção do corpo do documento, onde fica o conteúdo visível da página. -->
+
+    <h1 id="sessao1">LISTAS</h1> <!-- Cabeçalho de nível 1. Usado para o título principal da seção de listas. Atributo id permite link interno. -->
+
+    <h2>LISTAS ORDENADAS</h2> <!-- Cabeçalho de nível 2. Indica o início da seção para listas ordenadas. -->
+    <ol> <!-- Lista ordenada. Os itens são numerados automaticamente. -->
+        <li>Item 1</li> <!-- Item da lista ordenada. -->
+        <li>Item 2</li> <!-- Item da lista ordenada. -->
+        <li>Item 3</li> <!-- Item da lista ordenada. -->
+    </ol>
+
+    <h2>LISTAS NÃO ORDENADAS</h2> <!-- Cabeçalho de nível 2. Indica o início da seção para listas não ordenadas. -->
+    <ul> <!-- Lista não ordenada. Os itens são precedidos por marcadores (geralmente pontos). -->
+        <li>Item 1</li> <!-- Item da lista não ordenada. -->
+        <li>Item 2</li> <!-- Item da lista não ordenada. -->
+        <li>Item 3</li> <!-- Item da lista não ordenada. -->
+    </ul>
+
+    <h2>LISTAS ANINHADAS</h2> <!-- Cabeçalho de nível 2. Indica o início da seção para listas aninhadas. -->
+    <ol> <!-- Lista ordenada com itens aninhados. -->
+        <li>Item 1 <!-- Item principal da lista ordenada com sublista. -->
+            <ol> <!-- Sublista ordenada dentro do primeiro item da lista principal. -->
+                <li>SubItem 1</li> <!-- Item da sublista ordenada. -->
+                <li>SubItem 2</li> <!-- Item da sublista ordenada. -->
+                <li>SubItem 3</li> <!-- Item da sublista ordenada. -->
+            </ol>
+        </li>
+
+        <li>Item 1 <!-- Outro item principal da lista ordenada com uma sublista ainda mais profunda. -->
+            <ol> <!-- Sublista ordenada dentro do segundo item da lista principal. -->
+                <li>SubItem 1 <!-- Item da sublista com outra sublista aninhada. -->
+                    <ol> <!-- Sublista ordenada dentro de um item da sublista. -->
+                        <li>SubItem do subItem 1</li> <!-- Item da sublista aninhada. -->
+                        <li>SubItem do subItem 2</li> <!-- Item da sublista aninhada. -->
+                        <li>SubItem do subItem 3</li> <!-- Item da sublista aninhada. -->
+                    </ol>
+                </li>
+                <li>SubItem 2</li> <!-- Item da sublista ordenada. -->
+                <li>SubItem 3</li> <!-- Item da sublista ordenada. -->
+            </ol>
+        </li>
+    </ol>
+
+    <h2>LINKS</h2> <!-- Cabeçalho de nível 2. Indica o início da seção para links. -->
+    <a href="https://sp.senai.br/unidade/sumare/">SITE SENAI</a><br> <!-- Link para um site externo. Sem atributo target, abre na mesma aba. -->
+    <a href="https://sp.senai.br/unidade/sumare/" target="_blank">SITE SENAI - EM OUTRA ABA</a><br> <!-- Link para um site externo que abre em uma nova aba ou janela (atributo target="_blank"). -->
+    <a href="#sessao1">LINK INTERNO</a><br> <!-- Link interno que leva para a seção com o id "secao1". -->
+    <a href="./Aula 1 - HTML.html" target="_blank">AULA 1</a> <!-- Link para uma página local que abre em uma nova aba (atributo target="_blank"). -->
+
+</body>
+
+</html>

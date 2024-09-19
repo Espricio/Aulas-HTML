@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento. Informa ao navegador que este é um documento HTML5. -->
+<html lang="pt-br"> <!-- Início do documento HTML. O atributo 'lang' define o idioma como português do Brasil. -->
+
+<head> <!-- Início da seção de cabeçalho do documento, onde ficam os metadados e links para recursos externos. -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, para suportar caracteres especiais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a viewport para tornar a página responsiva em dispositivos móveis. -->
+    <title>Aula 4 - HTML</title>
+     <!-- Define o título da página, que aparece na aba do navegador. -->
+</head>
+
+<body> <!-- Início da seção do corpo do documento, onde fica o conteúdo visível da página. -->
+
+    <table border="1"> <!-- Cria uma tabela com borda de 1 pixel. -->
+        <thead> <!-- Seção do cabeçalho da tabela. -->
+            <tr> <!-- Linha de cabeçalho da tabela. -->
+                <th colspan="2">CRIANDO TABELAS</th> <!-- A célula de cabeçalho ocupa duas colunas -->
+                <!-- Célula de cabeçalho. Utiliza <th> em vez de <td> para representar cabeçalhos de coluna. -->
+            </tr>
+        </thead>
+        <tbody> <!-- Seção do corpo da tabela, onde os dados são exibidos. -->
+            <tr> <!-- Linha da tabela. -->
+                <th>COLUNA 1</th> <!-- Célula de cabeçalho da tabela. -->
+                <th>COLUNA 2</th> <!-- Célula de cabeçalho da tabela. -->
+            </tr>
+            <tr> <!-- Linha da tabela. -->
+                <td>COLUNA 1 - LINHA 2</td> <!-- Célula de dados da tabela. -->
+                <td>COLUNA 2 - LINHA 2</td> <!-- Célula de dados da tabela. -->
+            </tr>
+            <tr> <!-- Linha da tabela. -->
+                <td>COLUNA 1 - LINHA 3</td> <!-- Célula de dados da tabela. -->
+                <td>COLUNA 2 - LINHA 3</td> <!-- Célula de dados da tabela. -->
+            </tr>
+        </tbody>
+    </table><br><br> <!-- Quebras de linha para espaçar a tabela dos elementos seguintes. -->
+
+    <h2>FORMULÁRIOS</h2> <!-- Cabeçalho de nível 2 para a seção de formulários. -->
+
+    <form action="Aula 4.1 - HTML.html"> <!-- Início do formulário. O atributo 'action' especifica o URL para onde os dados do formulário serão enviados. -->
+
+        <label for="nome">Nome:</label> <!-- Rótulo para o campo de entrada de texto. O atributo 'for' deve corresponder ao 'id' do campo. -->
+        <input type="text" name="nome" placeholder="Nome" required> <!-- Campo de entrada de texto para o nome. 'required' torna o campo obrigatório. --> <br><br>
+
+        <label for="data-nascimento">Data de Nascimento:</label> <!-- Rótulo para o campo de entrada de data. -->
+        <input type="date" name="data-nascimento"><br><br> <!-- Campo de entrada de data. -->
+
+        <label for="idade">Idade:</label> <!-- Rótulo para o campo de entrada de número. -->
+        <input type="number" placeholder="Idade" name="idade" min="1" max="1000" ><br><br> <!-- Campo de entrada de número para idade, com valores mínimo e máximo definidos. -->
+
+        <label for="numero-telefone">Número de telefone:</label> <!-- Rótulo para o campo de entrada de texto para telefone. -->
+        <input type="text" placeholder="N° de Telefone" name="numero-telefone" pattern="[0-9]{10,12}" title="O número de telefone está incorreto!"><br><br> <!-- Campo de entrada de texto para telefone, com um padrão de validação para números de 10 a 12 dígitos. -->
+
+        <label for="password">Senha:</label> <!-- Rótulo para o campo de entrada de senha. -->
+        <input type="password" placeholder="Senha" name="password" minlength="6" required><br><br> <!-- Campo de entrada de senha, com o texto oculto e 'required' para obrigatoriedade. -->
+
+        <label for="opcao-unica">Selecione uma opção:</label> <!-- Rótulo para o grupo de botões de rádio. -->
+        <label>
+            <input type="radio" name="opcao-unica" value="Opção 1"> <!-- Botão de rádio para selecionar a opção 1. -->
+            Opção 1
+        </label>
+        <label>
+            <input type="radio" name="opcao-unica" value="Opção 2"> <!-- Botão de rádio para selecionar a opção 2. -->
+            Opção 2
+        </label><br><br>
+
+        <label for="opcoes">Selecione as opções:</label> <!-- Rótulo para o grupo de caixas de seleção. -->
+        <label>
+            <input type="checkbox" name="opcoes" value="Opção 1"> <!-- Caixa de seleção para a opção 1. -->
+            Opção 1
+        </label>
+        <label>
+            <input type="checkbox" name="opcoes" value="Opção 2"> <!-- Caixa de seleção para a opção 2. -->
+            Opção 2
+        </label><br><br>
+
+        <label for="area-texto">Área de Texto:</label> <!-- Rótulo para a área de texto. -->
+        <textarea name="area-texto" rows="4" cols="50"></textarea><br><br> <!-- Área de texto para entrada de múltiplas linhas de texto. -->
+
+        <input type="submit" value="Enviar"> <!-- Botão de envio do formulário com o texto "Enviar". -->
+        <button type="submit">Salvar</button> <!-- Outro botão de envio do formulário com o texto "Salvar". -->
+
+        <button type="reset">Limpar</button> <!-- Botão de reset do formulário com o texto "Limpar". -->
+
+    </form>
+
+</body>
+
+</html>
